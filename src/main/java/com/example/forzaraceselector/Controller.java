@@ -3,6 +3,7 @@ package com.example.forzaraceselector;
 import com.example.forzaraceselector.Lists.CarType;
 import com.example.forzaraceselector.Lists.RaceType;
 import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 
 import java.util.List;
@@ -29,6 +30,17 @@ public class Controller {
     private Label tuneText;
 
     @FXML
+    private CheckBox roadRaceCheckBox ;
+    @FXML
+    private CheckBox dirtRaceCheckBox ;
+    @FXML
+    private CheckBox crossCountryRaceCheckBox ;
+    @FXML
+    private CheckBox dragRaceCheckBox ;
+    @FXML
+    private CheckBox streetRaceCheckBox ;
+
+    @FXML
     protected void onSelectButtonClick() {
         raceType = new RaceType();
         roadRace = new RaceType.RoadRace();
@@ -36,7 +48,7 @@ public class Controller {
         crossCountryRace = new RaceType.CrossCountryRace();
         dragRace = new RaceType.DragRace();
         streetRace = new RaceType.StreetRace();
-
+        
         carType = new CarType();
         performance = new CarType.PerformanceClass();
         tune = new CarType.TuneType();
@@ -52,15 +64,15 @@ public class Controller {
         String performance = CarType.PerformanceClass.getPerformanceClass();
         String tune = CarType.TuneType.getTuneType();
 
-        if (raceType.matches("Road Race")) {
+        if (raceType.matches("Road Race") && roadRaceCheckBox.isSelected()) {
             raceText.setText("Road Race: " + roadRace);
-        } else if (raceType.matches("Dirt Race")) {
+        } else if (raceType.matches("Dirt Race") && dirtRaceCheckBox.isSelected()) {
             raceText.setText("Dirt Race: " + dirtRace);
-        } else if (raceType.matches("Cross Country Race")) {
+        } else if (raceType.matches("Cross Country Race") && crossCountryRaceCheckBox.isSelected()) {
             raceText.setText("Cross Country Race: " + crossCountryRace);
-        } else if (raceType.matches("Drag Race")) {
+        } else if (raceType.matches("Drag Race") && dragRaceCheckBox.isSelected()) {
             raceText.setText("Drag Race: " + dragRace);
-        } else if (raceType.matches("Street Race")) {
+        } else if (raceType.matches("Street Race") && streetRaceCheckBox.isSelected()) {
             raceText.setText("Street Race: " + streetRace);
         }
         carText.setText("Car Type: " + carType);

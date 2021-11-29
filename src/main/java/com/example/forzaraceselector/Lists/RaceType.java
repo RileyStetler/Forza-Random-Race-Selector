@@ -1,6 +1,7 @@
 package com.example.forzaraceselector.Lists;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -54,6 +55,10 @@ public class RaceType {
             roadRace.add("Panoramica Sprint");
             roadRace.add("Riviera Sprint");
             roadRace.add("The Colossus");
+
+            Iterator<String> iteratorCircuit = roadRace.iterator();
+            //Iterator<String> iteratorSprint = roadRace.iterator();
+            //Iterator<String> iteratorFestival = roadRace.iterator();
         }
 
         public static String getRoadRace() {

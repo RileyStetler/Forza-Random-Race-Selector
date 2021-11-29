@@ -90,17 +90,4 @@ public class CarType {
             return tune.get(rand.nextInt(tune.size()));
         }
     }
-
-    //Will add functionality at a later time
-    //public class Manufacturer {
-    //    public void main(int args) {
-    //
-    //    }
-    //}
-    //
-    //public class Year {
-    //    public void main(int args) {
-    //
-    //    }
-    //}
 }
