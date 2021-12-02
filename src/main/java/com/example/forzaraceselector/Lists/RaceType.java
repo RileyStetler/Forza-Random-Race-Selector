@@ -17,9 +17,8 @@ public class RaceType {
         raceType.add("Street Race");
     }
 
-    public static String getRaceType() {
-        Random rand = new Random();
-        return raceType.get(rand.nextInt(raceType.size()));
+    public static List<String> getRaceType() {
+        return raceType;
     }
 
     public static class RoadRace {

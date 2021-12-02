@@ -6,49 +6,122 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="960.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forzaraceselector.Controller">
+<AnchorPane prefHeight="966.0" prefWidth="1282.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forzaraceselector.Controller">
    <children>
-      <VBox layoutX="-1.0" prefHeight="883.0" prefWidth="234.0" spacing="20.0" style="-fx-background-color: #ff003b;">
-          <padding>
-              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-          </padding>
+      <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" prefHeight="891.0" prefWidth="234.0" style="-fx-background-color: #ff003b;">
+         <content>
+            <VBox prefHeight="134.0" prefWidth="234.0" spacing="10.0" style="-fx-background-color: #ff003b;">
+                <padding>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                </padding>
+               <Label text="Types of Races" underline="true">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
       
-          <CheckBox fx:id="roadRaceCheckBox" text="Road Races" />
-          <CheckBox fx:id="dirtRaceCheckBox" text="Dirt Races" />
-          <CheckBox fx:id="crossCountryRaceCheckBox" text="Cross Country Races" />
-          <CheckBox fx:id="dragRaceCheckBox" text="Drag Races" />
-          <CheckBox fx:id="streetRaceCheckBox" text="Street Races" />
-      </VBox>
-      <Pane layoutX="233.0" layoutY="697.0" prefHeight="263.0" prefWidth="1047.0">
-         <children>
-            <VBox alignment="CENTER" prefHeight="263.0" prefWidth="258.0">
-               <children>
-                   <Label fx:id="raceText" prefHeight="61.0" prefWidth="78.0" />
-               </children>
+                <CheckBox fx:id="roadRaceCheckBox" selected="true" text="Road Races" />
+                <CheckBox fx:id="dirtRaceCheckBox" selected="true" text="Dirt Races" />
+                <CheckBox fx:id="crossCountryRaceCheckBox" selected="true" text="Cross Country Races" />
+                <CheckBox fx:id="dragRaceCheckBox" selected="true" text="Drag Races" />
+                <CheckBox fx:id="streetRaceCheckBox" selected="true" text="Street Races" />
+      
+               <Separator layoutX="12.0" layoutY="184.0" prefWidth="200.0" />
+      
+               <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                      <padding>
+                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                      </padding>
+                     <Label text="Type of Car" underline="true">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+      
+                      <CheckBox fx:id="modernSupercarCheckBox" selected="true" text="Modern Supercars" />
+                      <CheckBox fx:id="retroSupercarCheckBox" selected="true" text="Retro Supercars" />
+                      <CheckBox fx:id="hypercarCheckBox" selected="true" text="Hypercars" />
+                      <CheckBox fx:id="retroSaloonCheckBox" selected="true" text="Retro Saloons" />
+                      <CheckBox fx:id="vanUtilityCheckBox" selected="true" text="Vans and Utility" />
+                      <CheckBox fx:id="retroSportsCarCheckBox" selected="true" text="Retro Sports Car" />
+                      <CheckBox fx:id="modernSportsCarCheckBox" selected="true" text="Modern Sports Car" />
+                      <CheckBox fx:id="superSaloonCheckBox" selected="true" text="Super Saloons" />
+                      <CheckBox fx:id="classicRacerCheckBox" selected="true" text="Classic Racers" />
+                      <CheckBox fx:id="cultCarCheckBox" selected="true" text="Cult Cars" />
+                      <CheckBox fx:id="rareClassicCheckBox" selected="true" text="Rare Classics" />
+                      <CheckBox fx:id="hotHatchCheckBox" selected="true" text="Hot Hatch" />
+                      <CheckBox fx:id="retroHotHatchCheckBox" selected="true" text="Retro Hot Hatch" />
+                      <CheckBox fx:id="superHotHatchCheckBox" selected="true" text="Super Hot Hatch" />
+                      <CheckBox fx:id="extremeTrackToyCheckBox" selected="true" text="Extreme Track Toys" />
+                      <CheckBox fx:id="classicMuscleCheckBox" selected="true" text="Classic Muscle" />
+                      <CheckBox fx:id="rodCustomCheckBox" selected="true" text="Rods and Customs" />
+                      <CheckBox fx:id="retroMuscleCheckBox" selected="true" text="Retro Muscle" />
+                      <CheckBox fx:id="modernMuscleCheckBox" selected="true" text="Modern Muscle" />
+                      <CheckBox fx:id="retroRallyCheckBox" selected="true" text="Retro Rally" />
+                      <CheckBox fx:id="classicRallyCheckBox" selected="true" text="Classic Rally" />
+                      <CheckBox fx:id="rallyMonsterCheckBox" selected="true" text="Rally Monsters" />
+                      <CheckBox fx:id="modernRallyCheckBox" selected="true" text="Modern Rally" />
+                      <CheckBox fx:id="gtCarCheckBox" selected="true" text="GT Cars" />
+                      <CheckBox fx:id="superGTCheckBox" selected="true" text="Super GT" />
+                      <CheckBox fx:id="unlimitedOffroadCheckBox" selected="true" text="Unlimited Offroad" />
+                      <CheckBox fx:id="sportsUtilityHeroCheckBox" selected="true" text="Sports Utility Heroes" />
+                      <CheckBox fx:id="offroadCheckBox" selected="true" text="Offroad" />
+                      <CheckBox fx:id="unlimitedBuggyCheckBox" selected="true" text="Unlimited Buggies" />
+                      <CheckBox fx:id="classicSportsCarCheckBox" selected="true" text="Classic Sports Cars" />
+                      <CheckBox fx:id="trackToyCheckBox" selected="true" text="Track Toys" />
+                      <CheckBox fx:id="vintageRacerCheckBox" selected="true" text="Vintage Racers" />
+                      <CheckBox fx:id="truckCheckBox" selected="true" text="Trucks" />
+                      <CheckBox fx:id="buggyCheckBox" selected="true" text="Buggies" />
+                      <CheckBox fx:id="driftCarCheckBox" selected="true" text="Drift Cars" />
+                      <CheckBox fx:id="pickup4x4CheckBox" selected="true" text="Pickups &amp; 4x4's" />
+                      <CheckBox fx:id="utvCheckBox" selected="true" text="UTV's" />
+      
+                     <Separator prefWidth="200.0" />
+      
+                     <VBox prefHeight="219.0" prefWidth="220.0" spacing="10.0">
+                         <padding>
+                             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                         </padding>
+                        <Label text="Performance Class" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+               
+                         <CheckBox fx:id="dCheckBox" selected="true" text="D Class" />
+                         <CheckBox fx:id="cCheckBox" selected="true" text="C Class" />
+                         <CheckBox fx:id="bCheckBox" selected="true" text="B Class" />
+                         <CheckBox fx:id="aCheckBox" selected="true" text="A Class" />
+                         <CheckBox fx:id="s1CheckBox" selected="true" text="S1 Class" />
+                         <CheckBox fx:id="s2CheckBox" selected="true" text="S2 Class" />
+                         <CheckBox fx:id="xCheckBox" selected="true" text="X Class" />
+                         <CheckBox fx:id="openCheckBox" selected="true" text="Open" />
+
+                         <Separator prefWidth="200.0" />
+
+                         <VBox prefHeight="219.0" prefWidth="220.0" spacing="10.0">
+                             <padding>
+                                 <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                             </padding>
+                             <Label text="Type of Tune" underline="true">
+                                 <font>
+                                     <Font size="18.0" />
+                                 </font>
+                             </Label>
+
+                             <CheckBox fx:id="raceCheckBox" selected="true" text="Race" />
+                             <CheckBox fx:id="driftCheckBox" selected="true" text="Drift" />
+                             <CheckBox fx:id="rallyCheckBox" selected="true" text="Rally" />
+                             <CheckBox fx:id="offroadTuneCheckBox" selected="true" text="Offroad" />
+                             <CheckBox fx:id="dragCheckBox" selected="true" text="Drag" />
+                         </VBox>
+                     </VBox>
+               </VBox>
             </VBox>
-            <VBox alignment="CENTER" layoutX="258.0" prefHeight="263.0" prefWidth="258.0">
-               <children>
-                   <Label fx:id="carText" />
-               </children>
-            </VBox>
-            <VBox alignment="CENTER" layoutX="524.0" prefHeight="263.0" prefWidth="258.0">
-               <children>
-                   <Label fx:id="performanceText" />
-               </children></VBox>
-            <VBox alignment="CENTER" layoutX="782.0" prefHeight="263.0" prefWidth="266.0">
-               <children>
-                   <Label fx:id="tuneText" />
-               </children></VBox>
-         </children>
-      </Pane>
-      <ImageView fitHeight="960.0" fitWidth="1047.0" layoutX="233.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/SelectorBackground.jpg" />
-         </image>
-      </ImageView>
-      <HBox alignment="CENTER" layoutX="-1.0" layoutY="883.0" prefHeight="83.0" prefWidth="234.0" style="-fx-background-color: #ff003b;">
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="888.0" prefHeight="78.0" prefWidth="234.0" style="-fx-background-color: #ff003b;">
          <children>
-             
              <Button alignment="CENTER" onAction="#onSelectButtonClick" prefHeight="53.0" prefWidth="224.0" text="Find me a race!">
                <font>
                   <Font size="18.0" />
@@ -56,5 +129,102 @@
             </Button>
          </children>
       </HBox>
+      <Pane layoutX="233.0" layoutY="697.0" prefHeight="263.0" prefWidth="1047.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="263.0" prefWidth="258.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="raceTypeText" alignment="CENTER" underline="true">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="raceText" alignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="258.0" prefHeight="263.0" prefWidth="258.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="carTypeText" alignment="CENTER" underline="true">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="carText" alignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="524.0" prefHeight="263.0" prefWidth="258.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="performanceClassText" alignment="CENTER" underline="true">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="performanceText" alignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="782.0" prefHeight="263.0" prefWidth="266.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="tuneTypeText" alignment="CENTER" underline="true">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                         <Label fx:id="tuneText" alignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <ImageView fitHeight="960.0" fitWidth="1047.0" layoutX="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/SelectorBackground.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -2,7 +2,6 @@ package com.example.forzaraceselector.Lists;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class CarType {
     private static List<String> carType;
@@ -48,9 +47,8 @@ public class CarType {
         carType.add("UTV's");
     }
 
-    public static String getCarType() {
-        Random rand = new Random();
-        return carType.get(rand.nextInt(carType.size()));
+    public static List<String> getCarType() {
+        return carType;
     }
 
     public static class PerformanceClass {
@@ -65,11 +63,11 @@ public class CarType {
             performance.add("S1");
             performance.add("S2");
             performance.add("X");
+            performance.add("Open");
         }
 
-        public static String getPerformanceClass() {
-            Random rand = new Random();
-            return performance.get(rand.nextInt(performance.size()));
+        public static List<String> getPerformance() {
+            return performance;
         }
     }
 
@@ -85,9 +83,8 @@ public class CarType {
             tune.add("Drag");
         }
 
-        public static String getTuneType() {
-            Random rand = new Random();
-            return tune.get(rand.nextInt(tune.size()));
+        public static List<String> getTuneType() {
+            return tune;
         }
     }
 }
